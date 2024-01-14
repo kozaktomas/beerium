@@ -1,0 +1,58 @@
+shops:
+  - maneo
+  - baracek
+
+beers:
+  - key: policka-11-50
+    brand: Policka
+    name: Otakar
+    type: lager
+    degree: 11
+    size: 50
+    shops:
+      maneo: https://www.eshop.maneo.cz/policka-11-otakar-50l-keg-ean25147-skup5Zn1ak1Zn1ak31.php
+      baracek: https://www.baracek.cz/sud-policka-otakar-11-50-l
+  - key: policka-11-30
+    brand: Policka
+    name: Otakar
+    type: lager
+    degree: 11
+    size: 30
+    shops:
+      maneo: https://www.eshop.maneo.cz/policka-11-otakar-30l-keg-ean25145-skup5Zn1ak1Zn1ak31.php
+      baracek: https://www.baracek.cz/sud-policka-otakar-11-30l
+  - key: policka-11-15
+    brand: Policka
+    name: Otakar
+    type: lager
+    degree: 11
+    size: 15
+    shops:
+      maneo: https://www.eshop.maneo.cz/policka-11-otakar-15l-keg-sv-lezak-ean27155-skup5Zn1ak1Zn1ak31.php
+      baracek: https://www.baracek.cz/sud-policka-otakar-11-15-l
+  - key: policka-11-10
+    brand: Policka
+    name: Otakar
+    type: lager
+    degree: 11
+    size: 10
+    shops:
+      maneo: https://www.eshop.maneo.cz/policka-11-otakar-10l-keg-ean27154-skup5Zn1ak1Zn1ak31.php
+      baracek: https://www.baracek.cz/sud-policka-otakar-11-10-l
+  - key: plzen-12-50
+    brand: Plzen
+    name: Plzen
+    type: lager
+    degree: 12
+    size: 50
+    shops:
+      maneo: https://www.eshop.maneo.cz/plzen-12-50l-keg-ean24070-skup5Zn1ak1Zn1ak1.php
+      baracek: https://www.baracek.cz/sud-plzen-12-keg-50l
+  - key: chotebor-12-50
+    brand: Chotebor
+    name: Premium
+    type: lager
+    degree: 12
+    size: 50
+    shops:
+      baracek: https://www.baracek.cz/sud-chotebor-12deg-premium-svlezak-50l

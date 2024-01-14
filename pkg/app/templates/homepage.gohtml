@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Beerium</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: coral;
+        }
+
+        .red {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="4" width="30%"></th>
+        {{ range $shopKey, $shopName := .OShops }}
+            <th>{{ $shopName }}</th>
+        {{ end }}
+    </tr>
+
+    {{ range $beerKey, $beer := .Beers }}
+        <tr>
+            <td>{{ $beer.Brand }}</td>
+            <td>{{ $beer.Name }}</td>
+            <td>{{ $beer.Degree }}°</td>
+            <td>{{ $beer.Size }} L</td>
+            {{ range $shopKey, $shopName := $.OShops }}
+                {{with $s := index $beer.Shops $shopName }}
+                    <td class="{{if not $s.Stock}}red{{else}}green{{end}}">
+                        <a href="{{ $s.Url }}" target="_blank">
+                            {{ $s.Price }} Kč
+                        </a>
+                    </td>
+                {{else}}
+                    <td>[NA]</td>
+                {{end}}
+            {{ end }}
+
+        </tr>
+    {{ end }}
+</table>
+</body>
+</html>
