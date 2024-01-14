@@ -15,6 +15,7 @@ WORKDIR /app
 ADD Dockerfile /Dockerfile
 
 COPY --from=builder /app/beerium /app/beerium
+ADD pkg/app/templates/homepage.gohtml /app/pkg/app/templates/homepage.gohtml
 
 RUN chown nobody /app/beerium \
     && chmod 500 /app/beerium
